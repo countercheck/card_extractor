@@ -23,9 +23,13 @@ coverage.xml
 venv/
 env/
 ENV/
+.venv
 
 # IDE files
 .idea/
 .vscode/
 *.swp
 *.swo
+
+# test pdfs
+tests/pdfs/

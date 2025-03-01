@@ -3,32 +3,32 @@
 ## Phase 1: Project Setup and Basic PDF Processing
 
 ### Project Initialization
-- [ ] Create new project directory "pdf_image_extractor"
-- [ ] Initialize pyproject.toml using poetry
-- [ ] Add PyMuPDF (fitz) as a project dependency
-- [ ] Set up proper Python package structure
-- [ ] Create minimal `__init__.py` with version info (`__version__ = "0.1.0"`)
-- [ ] Create main.py entry point file
-- [ ] Create tests directory
+- [x] Create new project directory "pdf_image_extractor" (created as "card-extractor" instead)
+- [x] Initialize pyproject.toml using poetry
+- [x] Add PyMuPDF (fitz) as a project dependency
+- [x] Set up proper Python package structure
+- [x] Create minimal `__init__.py` with version info (`__version__ = "0.1.0"`)
+- [x] Create main.py entry point file
+- [x] Create tests directory
 
 ### Basic Argument Parsing
-- [ ] Implement argparse in main.py
-- [ ] Add required --output-folder (-o) argument
-- [ ] Add helpful error message if output folder not provided
-- [ ] Add code to print parsed arguments to console
+- [x] Implement argparse in main.py
+- [x] Add required --output-folder (-o) argument
+- [x] Add helpful error message if output folder not provided
+- [x] Add code to print parsed arguments to console
 
 ### PDF Loading and Page Iteration
-- [ ] Create process_pdf(pdf_path, output_folder) function
-- [ ] Implement PDF opening with fitz.open()
-- [ ] Add page iteration loop
-- [ ] Add file not found error handling
-- [ ] Create test PDF file with multiple pages and images
+- [x] Create process_pdf(pdf_path, output_folder) function
+- [x] Implement PDF opening with fitz.open()
+- [x] Add page iteration loop
+- [x] Add file not found error handling
+- [x] Create test PDF file with multiple pages and images
 
 ### Basic Unit Tests
-- [ ] Create tests/test_main.py
-- [ ] Implement test_argument_parsing
-- [ ] Implement test_process_pdf_file_not_found
-- [ ] Implement test_process_pdf_page_iteration
+- [x] Create tests/test_main.py (created as tests/main.py)
+- [x] Implement test_argument_parsing
+- [x] Implement test_process_pdf_file_not_found
+- [x] Implement test_process_pdf_page_iteration
 
 ## Phase 2: Image Extraction and File Handling
 
@@ -70,7 +70,7 @@
 - [ ] Implement test_recursive_flag
 
 ### Bulk Processing and Directory Traversal
-- [ ] Modify main function to accept file or directory path
+- [x] Modify main function to accept file or directory path
 - [ ] Add os.listdir to get files in directory
 - [ ] Add filter for PDF files only
 - [ ] Implement process_pdf call for each PDF
@@ -84,7 +84,7 @@
 ## Phase 4: Password Protection and Logging
 
 ### Password Protection Handling
-- [ ] Add try/except block around fitz.open()
+- [x] Add try/except block around fitz.open()
 - [ ] Catch RuntimeError and check for "password" in message
 - [ ] Add prompt for password with input()
 - [ ] Implement retry with fitz.open(pdf_path, password=user_provided_password)
@@ -94,7 +94,7 @@
 - [ ] Add logging for file processing: print(f"Processing: {pdf_path}")
 - [ ] Add logging for extracted images with dimensions
 - [ ] Implement error handling for corrupted files (fitz.FileDataError)
-- [ ] Add generic exception handling
+- [x] Add generic exception handling
 
 ### Unit Tests for Password Protection and Logging
 - [ ] Implement test_password_protected_pdf_correct_password
@@ -107,17 +107,17 @@
 ## Phase 5: Package Finalization
 
 ### Package Structure Completion
-- [ ] Review codebase for key functions to expose
-- [ ] Update `__init__.py` with proper imports
-- [ ] Define `__all__` list
-- [ ] Add package docstring
+- [x] Review codebase for key functions to expose
+- [x] Update `__init__.py` with proper imports
+- [x] Define `__all__` list
+- [x] Add package docstring
 
 ### Entry Point Configuration
-- [ ] Update pyproject.toml with console script entry point
-- [ ] Configure entry point to call main function
+- [x] Update pyproject.toml with console script entry point
+- [x] Configure entry point to call main function
 
 ### Documentation
-- [ ] Create README.md
+- [ ] Create README.md (referenced in pyproject.toml but content not provided)
 - [ ] Add installation instructions
 - [ ] Document all command-line options
 - [ ] Include usage examples
@@ -128,7 +128,7 @@
 - [ ] Run full test suite and ensure all tests pass
 - [ ] Check test coverage
 - [ ] Run code through linter (flake8 or pylint)
-- [ ] Add docstrings to all functions and classes
+- [x] Add docstrings to all functions and classes
 
 ### Package Testing
 - [ ] Test installation from source
