@@ -1,19 +1,21 @@
 [project]
 name = "card-extractor"
 version = "0.1.0"
-description = ""
+description = "A command-line tool for extracting images from PDF files"
 authors = [
-    {name = "Your Name",email = "you@example.com"}
+    {name = "countercheck", email = "mike.atlin@gmail.com"}
 ]
 readme = "README.md"
 requires-python = ">=3.9"
 dependencies = [
-    "PyMuPDF"
+    "PyMuPDF>=1.22.0"
 ]
 
 [tool.poetry]
 packages = [{include = "card_extractor", from = "src"}]
 
+[tool.poetry.scripts]
+card-extractor = "card_extractor.main:main"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
