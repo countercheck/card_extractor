@@ -37,22 +37,26 @@
 - [ ] Implement iteration through images on each page
 - [ ] Extract image data with doc.extract_image(image[0])
 - [ ] Add code to print image extension
+- [ ] Add Tests
 
 ### Image Saving
 - [ ] Create output file path constructor using PDF filename, page number, image number
 - [ ] Use os.path.join for platform-independent paths
 - [ ] Add code to create output directory if it doesn't exist
 - [ ] Implement image data writing to file
+- [ ] Add Tests
 
 ### File Overwrite Handling
 - [ ] Add check for existing files with os.path.exists()
 - [ ] Implement numerical suffix (_1, _2, etc.) for duplicate filenames
 - [ ] Add loop to find unique filename
+- [ ] Add Tests
 
 ### Unit Tests for Image Extraction
 - [ ] Implement test_image_extraction
 - [ ] Implement test_image_saving with tempfile module
 - [ ] Implement test_file_overwrite
+- [ ] Add Tests
 
 ## Phase 3: Command-Line Options and Bulk Processing
 
@@ -62,6 +66,7 @@
 - [ ] Add --pages (-p) option with support for single pages, ranges, and comma-separated values
 - [ ] Create parse_pages helper function
 - [ ] Add --recursive (-r) flag with action='store_true'
+- [ ] Add Tests
 
 ### Unit Tests for Command-Line Options
 - [ ] Implement test_format_option
@@ -89,12 +94,14 @@
 - [ ] Add prompt for password with input()
 - [ ] Implement retry with fitz.open(pdf_path, password=user_provided_password)
 - [ ] Add error handling for incorrect passwords
+- [ ] Add Tests
 
 ### Logging Implementation
 - [ ] Add logging for file processing: print(f"Processing: {pdf_path}")
 - [ ] Add logging for extracted images with dimensions
 - [ ] Implement error handling for corrupted files (fitz.FileDataError)
 - [x] Add generic exception handling
+- [ ] Add Tests
 
 ### Unit Tests for Password Protection and Logging
 - [ ] Implement test_password_protected_pdf_correct_password
