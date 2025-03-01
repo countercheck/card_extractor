@@ -32,5 +32,6 @@ ENV/
 *.swp
 *.swo
 
-# test pdfs
+# test imputs and outputs
 tests/pdfs/
+tests/output/
