@@ -34,4 +34,4 @@ ENV/
 
 # test imputs and outputs
 tests/pdfs/
-tests/output/
+tests/img/
